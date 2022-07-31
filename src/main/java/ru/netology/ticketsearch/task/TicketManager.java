@@ -3,7 +3,8 @@ package ru.netology.ticketsearch.task;
 import java.util.Arrays;
 
 public class TicketManager {
-private TicketRepository repo;
+    private TicketRepository repo;
+
     public TicketManager(TicketRepository repo) {
         this.repo = repo;
     }

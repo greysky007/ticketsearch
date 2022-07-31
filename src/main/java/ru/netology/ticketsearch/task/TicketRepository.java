@@ -25,6 +25,7 @@ public class TicketRepository {
         }
         tickets = tmp;
     }
+
     public Ticket[] getItems() {
         return tickets;
     }

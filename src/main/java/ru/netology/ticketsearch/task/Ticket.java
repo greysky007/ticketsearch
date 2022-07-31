@@ -1,4 +1,5 @@
 package ru.netology.ticketsearch.task;
+
 public class Ticket implements Comparable<Ticket> {
 
     protected int id;
