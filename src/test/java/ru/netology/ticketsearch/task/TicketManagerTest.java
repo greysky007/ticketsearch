@@ -41,6 +41,19 @@ public class TicketManagerTest {
         Ticket[] actual = manager.searchBy("DME", "NBC");
         Assertions.assertArrayEquals(expected, actual);
     }
+    @Test
+    public void shouldSearchOneItem() {
+        Ticket[] expected = {ticket8};
+        Ticket[] actual = manager.searchBy("NYR", "OMS");
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldSearchMissedItem() {
+        Ticket[] expected = {};
+        Ticket[] actual = manager.searchBy("NYR", "VKO");
+        Assertions.assertArrayEquals(expected, actual);
+    }
 
     @Test
     public void shouldSort() {
